@@ -14,6 +14,7 @@ body {
   position: relative;
   background: transparent;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -25,11 +26,23 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
-@media (min-width: 1024px) {
-  body::before {
-    background-attachment: fixed;
+@media (max-width:425px)
+  {
+    body::before
+    {
+      background-position: center;
+      width: 100vw;
+    }
+  }
+@media (max-width:768px) and (min-width:425px)
+{
+  body::before
+  {
+    background-position: center;
+    width: 100vw;
   }
 }
+
 
 a {
   color: #18d26e;
@@ -90,6 +103,45 @@ h1, h2, h3, h4, h5, h6 {
 #header .social-links {
   margin-top: 40px;
   display: flex;
+}
+@media (max-width:320px)
+  {
+    #header .social-links
+    {
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    #header .social-links a
+    {
+      margin: 10px auto 10px auto;
+    }
+  }
+@media (max-width:375px) and (min-width:320px)
+{
+  #header .social-links
+    {
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    #header .social-links a
+    {
+      margin: 10px;
+    }
+}
+@media (max-width:425px) and (min-width:375px)
+{
+  #header .social-links
+    {
+      margin: auto;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    #header .social-links a
+    {
+      margin: 10px;
+    }
 }
 #header .social-links a {
   font-size: 30px;

@@ -843,17 +843,6 @@ section .container {
   bottom: 0;
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details
